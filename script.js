@@ -21,7 +21,7 @@ form.addEventListener('submit', function(event) {
         // Fermer la première carte
         document.getElementById('first-card').style.display = 'none';
         // Ouvrir la deuxième carte
-        document.querySelector('.second-card-wrap').style.display = 'block'; 
+        document.querySelector('.second-card-wrap').style.display = 'flex'; 
     } else {
         // Mettre une alerte si c'est submit sans note
         alert('Please select a grade before submitting.');
