@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --white: #ffffff;
+  --orange: #FC7614;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/************** Body **************/
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #131519;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-wrap {
+  background: radial-gradient(circle at center 5%, rgb(42, 52, 63) 0%, rgb(23, 30, 39) 100%);
+  max-width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  padding: 35px;
+}
+.cards-wrap .first-card-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.cards-wrap .first-card-wrap .star-img {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards-wrap .first-card-wrap .star-img svg {
+  transform: scale(1.3);
+}
+.cards-wrap .first-card-wrap .text-zone h2 {
+  font-weight: 500;
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+.cards-wrap .first-card-wrap .text-zone p {
+  font-size: medium;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.611);
+}
+.cards-wrap .first-card-wrap .grades {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-wrap .first-card-wrap .grades .grade-btn {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: rgba(255, 255, 255, 0.611);
+  font-size: large;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.cards-wrap .first-card-wrap .grades .grade-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4941176471);
+}
+.cards-wrap .first-card-wrap .grades input[type=radio] {
+  display: none;
+}
+.cards-wrap .first-card-wrap .grades input:checked + label {
+  background-color: var(--orange);
+}
+.cards-wrap .first-card-wrap .submit-btn {
+  height: 50px;
+  width: 100%;
+  background-color: #FC7614;
+  color: var(--white);
+  letter-spacing: 3px;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.cards-wrap .first-card-wrap .submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+.cards-wrap .second-card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 100%;
+  padding: 10px;
+  font-size: 1.01em;
+}
+.cards-wrap .second-card-wrap .rating {
+  color: var(--orange);
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  padding: 3px 20px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 25px;
+}
+.cards-wrap .second-card-wrap h2 {
+  font-weight: 500;
+  font-size: 2em;
+  padding-bottom: 15px;
+}
+.cards-wrap .second-card-wrap p {
+  color: rgba(255, 255, 255, 0.5215686275);
+  line-height: 30px;
+}/*# sourceMappingURL=style.css.map */
